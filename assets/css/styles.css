@@ -1,0 +1,6 @@
+.bgimage {
+    background-image: url('../img/img_bookclub.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+}
