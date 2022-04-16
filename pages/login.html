@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/all.css" rel="stylesheet" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9feb0bedb3.js" crossorigin="anonymous"></script>
     <title>Login</title>
-  </head>
-  <body>
-    <div class="card text-left">
-      <img class="card-img-top" src="holder.js/100px180/" alt="" />
-      <div class="card-body">
-        <h4 class="card-title">Title</h4>
-        <p class="card-text">Body</p>
-      </div>
+</head>
+
+<body>
+    <div style="height: 100vh;" class="d-flex justify-content-center align-items-center">
+        <div>
+            <div style="height: 440px; width: 400px;" class="card row">
+                <div class="d-flex justify-content-center">
+                    <img class="mt-5 mb-3" src="./../assets/img/googleText.svg" alt="Google Text" width="70px" />
+
+                </div>
+
+                <h4 class="d-flex justify-content-center">Fazer login</h4>
+
+                <p class="d-flex justify-content-center">Use sua Conta do Google</p>
+
+                <form class="mt-3 ml-4 mr-4">
+                    <div class="form-group">
+                        <input style="height: 50px;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail ou telefone">
+                        <small id="emailHelp" class="form-text text-muted">
+                            <a href="#" class="font-weight-bold">
+                                Esquece seu e-mail?
+                            </a>
+                        </small>
+                    </div>
+                </form>
+
+                <p style="font-size: 12px;" class="mt-3 ml-4 mr-4">Não está no seu computador? Use uma janela privada para fazer login. <a class="font-weight-bold" href="#">Saiba mais</a></p>
+
+                <div class="row mt-4 ml-4 mr-4">
+                    <div class="mr-auto d-flex align-items-center">
+                        <a style="font-size: 12px;" href="#" class="font-weight-bold">Criar Conta</a>
+                    </div>
+                    <a type="button" href="index.html" class="btn btn-primary">Próxima</a>
+                </div>
+
+            </div>
+            <div class="row mt-1">
+                <div class="mr-auto">
+                    <div class="dropdown show">
+                        <a href="#" style="font-size: 12px;" role="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Português (Brasil)</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">English (United Kingdon)</a>
+                            <a href="#" class="dropdown-item">English (United States)</a>
+                            <a href="#" class="dropdown-item">Português (Brasil)</a>
+                            <a href="#" class="dropdown-item">Português (Portugal)</a>
+                            <a href="#" class="dropdown-item">Espanhol (Espanã)</a>
+                            <a href="#" class="dropdown-item">Espanhol (Latinoamérica)</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" style="font-size: 12px;" type="button" class="btn btn-default text-secondary">Ajuda</a>
+                    <a href="#" style="font-size: 12px;" type="button" class="btn btn-default text-secondary">Privacidade</a>
+                    <a href="#" style="font-size: 12px;" type="button" class="btn btn-default text-secondary">Termos</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <script src="../assets/js/jquery-3.3.1.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+</body>
+
 </html>

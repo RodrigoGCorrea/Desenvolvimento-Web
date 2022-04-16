@@ -1,154 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/all.css" rel="stylesheet" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9feb0bedb3.js" crossorigin="anonymous"></script>
     <title>Turmas</title>
-  </head>
+</head>
 
-  <body text-secondary>
+<body>
     <nav class="navbar navbar-expand-sm border-bottom border-light">
-      <div class="navbar-nav mr-auto">
-        <div class="dropdown view overlay">
-          <a
-            type="button"
-            class="btn btn-default rounded-circle nav-item"
-            data-toggle="dropdown"
-          >
-            <i class="fas fa-bars fa-2x text-secondary"></i>
-          </a>
-          <div class="dropdown-menu">
-            <div class="border-bottom border-light">
-              <a href="#" class="dropdown-item text-secondary"
-                ><i class="fas fa-home"></i> Turma</a
-              >
-              <a href="#" class="dropdown-item text-secondary"
-                ><i class="far fa-calendar"></i> Agenda</a
-              >
+        <div class="navbar-nav mr-auto">
+            <div class="dropdown view overlay">
+                <a type="button" class="btn btn-default rounded-circle nav-item" data-toggle="dropdown">
+                    <i class="fas fa-bars fa-2x text-secondary"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="border-bottom border-light">
+                        <a href="#" class="dropdown-item text-secondary"><i class="fas fa-home"></i> Turmas</a>
+                        <a href="#" class="dropdown-item text-secondary"><i class="far fa-calendar"></i> Agenda</a>
+                        <a href="#" class="dropdown-item text-secondary"><i class="fas fa-archive"></i> Turmas arquivadas</a>
+                        <a href="#" class="dropdown-item text-secondary"><i class="fas fa-cog"></i> Configurações</a>
+                    </div>
+                </div>
             </div>
-
-            <a href="#" class="dropdown-item text-secondary"
-              ><i class="fas fa-archive"></i> Turmas arquivadas</a
-            >
-            <a href="#" class="dropdown-item text-secondary"
-              ><i class="fas fa-cog"></i> Configurações</a
-            >
-          </div>
+            <img class="mr-2" src="./../assets/img/googleText.svg" alt="Google Text" width="120px" />
+            <h1 class="text-secondary nav-item">Sala de Aula</h1>
         </div>
-        <img
-          class="mr-2"
-          src="./../assets/img/googleText.svg"
-          alt="Google Text"
-          width="120px"
-        />
-        <h1 class="text-secondary nav-item">Sala de Aula</h1>
-      </div>
-      <div class="navbar-nav align-center">
-        <a
-          type="button"
-          class="
-            btn btn-default
-            rounded-circle
-            nav-item
-            text-secondary
-            align-self-center
-            mr-4
-          "
-        >
-          <i class="fas fa-plus fa-2x"></i>
-        </a>
-        <a
-          class="
-            btn btn-default
-            rounded-circle
-            mr-3
-            nav-item
-            text-secondary
-            align-self-center
-          "
-        >
-          <i class="fas fa-th fa-2x"></i>
-        </a>
-        <div>
-          <img
-            class="rounded-circle nav-item"
-            src="../assets\img\usernameimage.png"
-            alt=""
-          />
+        <div class="navbar-nav align-center">
+            <a type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4">
+                <i class="fas fa-plus fa-2x"></i>
+            </a>
+            <a class="btn btn-default rounded-circle mr-3 nav-item text-secondary align-self-center">
+                <i class="fas fa-th fa-2x"></i>
+            </a>
+            <div>
+                <img class="rounded-circle nav-item" src="../assets\img\usernameimage.png" alt="" />
+            </div>
         </div>
-      </div>
     </nav>
 
     <div class="ml-3 mr-3">
-      <a class="btn">
-        <div class="d-flex">
-          <i class="fas fa-tasks fa-2x mr-2 text-secondary"></i>
-          <span class="align-self-center text-primary font-weight-bold"
-            >Pendentes</span
-          >
+        <div class="mb-5 mt-5">
+            <a class="btn">
+                <div class="row">
+                    <i class="fas fa-tasks fa-2x mr-2 text-primary d-flex align-items-center"></i>
+                    <span class="align-self-center text-primary font-weight-bold d-flex align-items-center mr-3">Pendentes</span>
+                </div>
+            </a>
+            <a class="btn">
+                <div class="row">
+                    <i class="far fa-calendar fa-2x mr-2 text-primary d-flex justify-content-center"></i>
+                    <span class="align-self-center text-primary font-weight-bold d-flex justify-content-center">Agenda</span>
+                </div>
+            </a>
+
         </div>
-      </a>
-      <a class="btn">
-        <div class="d-flex">
-          <i class="far fa-calendar fa-2x mr-2 text-secondary"></i>
-          <span class="align-self-center text-primary font-weight-bold"
-            >Agenda</span
-          >
-        </div>
-      </a>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3 mr-3">
-            <img src="./../assets/img/img_read.jpg" alt="" />
-            <div class="card-body">
-              <div>TCC00290 - COMPUTAÇÃO E SOCIEDADE</div>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div style="height: 400px;" class="card mb-3 mr-3 hover-shadow">
+                    <img src="./../assets/img/img_read.jpg" alt="" />
+                    <div class="card-title ml-3 mt-3">
+                        <a href="turma.html">
+                            <h5>TCC00290 - COMPUTAÇÃO E SOCIEDADE</h5>
+                            <p>2022 / 1º</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir seu trabalho para &quot;TCC00290 - COMPUTAÇÃO E SOCIEDADE&quot;">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                        </a>
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir a pasta de &quot;TCC00290 - COMPUTAÇÃO E SOCIEDADE 2022 / 1º&quot; no Google Drive">
+                            <i class="fa-regular fa-folder-closed fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3 mr-3">
-            <img src="./../assets/img/img_code.jpg" alt="" />
-            <div class="card-body">
-              <div>TCC00226 - DESENVOLVIMENTO WEB</div>
+
+            <div class="col-lg-4 col-md-6">
+                <div style="height: 400px;" class="card mb-3 mr-3 hover-shadow">
+                    <img src="./../assets/img/img_bookclub.jpg" alt="" />
+                    <div class="card-title ml-3 mt-3">
+                        <a href="turma.html">
+                            <h5>TCC00226 - DESENVOLVIMENTO WEB</h5>
+                            <p>2022 / 1º</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir seu trabalho para &quot;TCC00226 - DESENVOLVIMENTO WEB&quot;">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                        </a>
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir a pasta de &quot;TCC00226 - DESENVOLVIMENTO WEB 2022 / 1º&quot; no Google Drive">
+                            <i class="fa-regular fa-folder-closed fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3 mr-3">
-            <img src="./../assets/img/img_graduation.jpg" alt="" />
-            <div class="card-body">
-              <div>TCC00286 - ARQUITETURAS DE COMPUTADORES</div>
+
+            <div class="col-lg-4 col-md-6">
+                <div style="height: 400px;" class="card mb-3 mr-3 hover-shadow">
+                    <img src="./../assets/img/img_graduation.jpg" alt="" />
+                    <div class="card-title ml-3 mt-3">
+                        <a href="turma.html">
+                            <h5>TCC00286 - ARQUITETURAS DE COMPUTADORES</h5>
+                            <p>2022 / 1º</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir seu trabalho para &quot;TCC00286 - ARQUITETURAS DE COMPUTADORES&quot;">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                        </a>
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir a pasta de &quot;TCC00286 - ARQUITETURAS DE COMPUTADORES 2022 / 1º&quot; no Google Drive">
+                            <i class="fa-regular fa-folder-closed fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3 mr-3">
-            <img src="./../assets/img/img_learnlanguage.jpg" alt="" />
-            <div class="card-body">
-              <div>TCC00306 - MÉTODOS NUMÉRICOS</div>
+
+            <div class="col-lg-4 col-md-6">
+                <div style="height: 400px;" class="card mb-3 mr-3 hover-shadow">
+                    <img src="./../assets/img/img_learnlanguage.jpg" alt="" />
+                    <div class="card-title ml-3 mt-3">
+                        <a href="turma.html">
+                            <h5>TCC00306 - MÉTODOS NUMÉRICOS</h5>
+                            <p>2022 / 1º</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir seu trabalho para &quot;TCC00306 - MÉTODOS NUMÉRICOS&quot;">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                        </a>
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir a pasta de &quot;TCC00306 - MÉTODOS NUMÉRICOS 2022 / 1º&quot; no Google Drive">
+                            <i class="fa-regular fa-folder-closed fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3 mr-3">
-            <img src="./../assets/img/SO_HP_photo.jpg" alt="" />
-            <div class="card-body">
-              <div>TCC00316 - SISTEMAS OPERACIONAIS</div>
+
+            <div class="col-lg-4 col-md-6">
+                <div style="height: 400px;" class="card mb-3 mr-3 hover-shadow">
+                    <img src="./../assets/img/SO_HP_photo.jpg" alt="" />
+                    <div class="card-title ml-3 mt-3">
+                        <a href="turma.html">
+                            <h5>TCC00316 - SISTEMAS OPERACIONAIS</h5>
+                            <p>2022 / 1º</p>
+                        </a>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer text-right">
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir seu trabalho para &quot;TCC00316 - SISTEMAS OPERACIONAIS&quot;">
+                            <i class="fa-regular fa-address-book fa-2x"></i>
+                        </a>
+                        <a href="#" type="button" class="btn btn-default rounded-circle nav-item text-secondary align-self-center mr-4" data-trigger="hover" data-toggle="tooltip" data-placement="bottom" title="Abrir a pasta de &quot;TCC00316 - SISTEMAS OPERACIONAIS 2022 / 1º&quot; no Google Drive">
+                            <i class="fa-regular fa-folder-closed fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
-      </div>
     </div>
 
     <script src="../assets/js/jquery-3.3.1.js"></script>
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
